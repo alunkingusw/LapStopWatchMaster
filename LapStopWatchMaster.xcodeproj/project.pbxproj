@@ -35,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D794CA62CFFB6AF00D39650 /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.1.sdk/System/Library/Frameworks/AppIntents.framework; sourceTree = DEVELOPER_DIR; };
+		5D794CA72CFFB6AF00D39650 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.1.sdk/System/Library/Frameworks/Intents.framework; sourceTree = DEVELOPER_DIR; };
 		5DA8A91E2CF9E78600FF02F5 /* LapStopWatchMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LapStopWatchMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA8A9242CF9E78600FF02F5 /* LapStopWatchMaster Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LapStopWatchMaster Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -58,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D794CA52CFFB6AF00D39650 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D794CA62CFFB6AF00D39650 /* AppIntents.framework */,
+				5D794CA72CFFB6AF00D39650 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5DA8A9172CF9E78600FF02F5 = {
 			isa = PBXGroup;
 			children = (
 				5DA8A9282CF9E78600FF02F5 /* LapStopWatchMaster Watch App */,
+				5D794CA52CFFB6AF00D39650 /* Frameworks */,
 				5DA8A91F2CF9E78600FF02F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -315,8 +327,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LapStopWatchMaster Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ZYU95VV6R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LapStopWatchMaster-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = LapStopWatchMaster;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -332,7 +346,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Debug;
 		};
@@ -344,8 +358,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LapStopWatchMaster Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ZYU95VV6R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LapStopWatchMaster-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = LapStopWatchMaster;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -362,7 +378,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+				WATCHOS_DEPLOYMENT_TARGET = 10.6;
 			};
 			name = Release;
 		};
@@ -371,6 +387,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZYU95VV6R;
 				INFOPLIST_KEY_CFBundleDisplayName = LapStopWatchMaster;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.southwales.LapStopWatchMaster;
@@ -385,6 +402,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZYU95VV6R;
 				INFOPLIST_KEY_CFBundleDisplayName = LapStopWatchMaster;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.southwales.LapStopWatchMaster;
